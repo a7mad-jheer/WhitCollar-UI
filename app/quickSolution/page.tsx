@@ -1,6 +1,5 @@
-import { BgBlur } from "@/Components/global/page";
+import { BgBlur } from "@/Components/global/GlobalWrapper";
 import { FaChevronRight } from "react-icons/fa";
-
 
 const items = [
   "Main Questions",
@@ -42,13 +41,17 @@ export const QuickSolution = () => {
           <ul className="flex flex-col gap-3 xl:gap-8">
             <li className="border-2 border-gray-200 px-2 py-5 flex justify-between shadow-2xs">
               <h1 className="font-semibold">how Does Our Pricing Works ?</h1>
-              <span><FaChevronRight /></span>
+              <span>
+                <FaChevronRight />
+              </span>
             </li>
 
             <li className="border-2 border-gray-200 px-2 py-5 shadow-2xs">
               <div className=" flex justify-between mb-3">
-                <h1  className="font-semibold">how Does Our Pricing Works ?</h1>
-                <span><FaChevronRight /></span>
+                <h1 className="font-semibold">how Does Our Pricing Works ?</h1>
+                <span>
+                  <FaChevronRight />
+                </span>
               </div>
 
               <p className="text-gray-500">
@@ -60,19 +63,25 @@ export const QuickSolution = () => {
             </li>
 
             <li className="border-2 border-gray-200 px-2 py-5 flex justify-between shadow-2xs">
-              <h1  className="font-semibold">Do you offer volume or layalty discounts ?</h1>
-              <span><FaChevronRight /></span>
+              <h1 className="font-semibold">
+                Do you offer volume or layalty discounts ?
+              </h1>
+              <span>
+                <FaChevronRight />
+              </span>
             </li>
 
             <li className="border-2 border-gray-200 px-2 py-5 flex justify-between shadow-2xs">
-              <h1  className="font-semibold">What types of compaines do you work with ?</h1>
-              <span><FaChevronRight/></span>
+              <h1 className="font-semibold">
+                What types of compaines do you work with ?
+              </h1>
+              <span>
+                <FaChevronRight />
+              </span>
             </li>
           </ul>
         </div>
       </div>
-
-
     </section>
   );
 };

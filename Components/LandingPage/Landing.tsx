@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { FaPlayCircle } from "react-icons/fa";
-import { BgBlur, HeroTitle } from "../global/page";
+import { BgBlur, HeroTitle } from "../global/GlobalWrapper";
 
 export default function Landing() {
   return (

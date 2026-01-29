@@ -1,4 +1,9 @@
-import { BgBlur, Button, HeroTitle, PostCard } from "@/Components/global/page";
+import {
+  BgBlur,
+  Button,
+  HeroTitle,
+  PostCard,
+} from "@/Components/global/GlobalWrapper";
 import { FaUser } from "react-icons/fa6";
 import { GiCrossMark } from "react-icons/gi";
 import { FaAngleRight } from "react-icons/fa";

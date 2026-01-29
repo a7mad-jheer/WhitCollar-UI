@@ -5,7 +5,7 @@ import {
   Circle,
   ClientCard,
   HeroTitle,
-} from "../../Components/global/page";
+} from "../../Components/global/GlobalWrapper";
 import { FaHandshake } from "react-icons/fa";
 import { FaBriefcase } from "react-icons/fa";
 import { FaRegLightbulb } from "react-icons/fa";

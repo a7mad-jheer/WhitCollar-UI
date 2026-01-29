@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { HeroTitle } from "@/Components/global/page";
+import { HeroTitle } from "@/Components/global/GlobalWrapper";
 
 import { CiStar } from "react-icons/ci";
 

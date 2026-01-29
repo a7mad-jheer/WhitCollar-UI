@@ -5,7 +5,7 @@ import {
   Button,
   HeroTitle,
   ScrollOverlay,
-} from "@/Components/global/page";
+} from "@/Components/global/GlobalWrapper";
 import Link from "next/link";
 import { IoIosArrowForward } from "react-icons/io";
 import { FaFilePdf } from "react-icons/fa6";
@@ -13,7 +13,7 @@ import { FaFileZipper } from "react-icons/fa6";
 import Image from "next/image";
 import { MdOutlineDone } from "react-icons/md";
 import { IoMdAdd } from "react-icons/io";
-import {  useState } from "react";
+import { useState } from "react";
 
 const servicesItems = [
   {
@@ -70,7 +70,7 @@ const questionsItems = [
 ];
 
 export const BusinessManagement = () => {
-  const [onMouseService, setOnMouseService] = useState<number | null>(null); 
+  const [onMouseService, setOnMouseService] = useState<number | null>(null);
 
   return (
     <section>

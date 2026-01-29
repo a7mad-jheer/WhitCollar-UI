@@ -1,6 +1,5 @@
 import Image from "next/image";
-import {Button, HeroTitle } from "@/Components/global/page"
-
+import { Button, HeroTitle } from "@/Components/global/GlobalWrapper";
 
 export default function SubScribe() {
   return (

@@ -1,7 +1,6 @@
 "use client";
 import { MdOutlineDone } from "react-icons/md";
-import {Button, HeroTitle } from "@/Components/global/page"
-
+import { Button, HeroTitle } from "@/Components/global/GlobalWrapper";
 
 const items = [
   {
@@ -28,12 +27,12 @@ const items = [
 ];
 
 const INPUT = [
-  {id: 0 , placeHolder:"Your Name" , type:"text"},
-  {id: 1 , placeHolder:"Email Address" , type:"text"},
-  {id: 2 , placeHolder:"Phone Number" , type:"text"} ,
-  {id: 3 , placeHolder:"Date" , type:"date"},
-  {id: 4 , placeHolder:"Time" , type:"time"},
-]
+  { id: 0, placeHolder: "Your Name", type: "text" },
+  { id: 1, placeHolder: "Email Address", type: "text" },
+  { id: 2, placeHolder: "Phone Number", type: "text" },
+  { id: 3, placeHolder: "Date", type: "date" },
+  { id: 4, placeHolder: "Time", type: "time" },
+];
 export default function HowWork() {
   return (
     <section className="overflow-hidden grid xl:grid-cols-12 grid-cols-1  gap-10 xl:py-20 xl:px-50  items-stretch  md:p-15 p-5 ">
@@ -106,13 +105,13 @@ export default function HowWork() {
           {INPUT.map((inp) => {
             return (
               <input
-              key={inp.id}
-            className="p-4 border-gray-200 border-2 rounded outline-none text-gray-800"
-            type={inp.type}
-            placeholder={inp.placeHolder}
-          />
-            )
-          } )}
+                key={inp.id}
+                className="p-4 border-gray-200 border-2 rounded outline-none text-gray-800"
+                type={inp.type}
+                placeholder={inp.placeHolder}
+              />
+            );
+          })}
           <textarea
             rows={4}
             className="p-4 border-gray-200 border-2 rounded outline-none text-gray-800"

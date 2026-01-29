@@ -1,4 +1,4 @@
-import { HeroTitle } from "@/Components/global/page";
+import { HeroTitle } from "@/Components/global/GlobalWrapper";
 
 export const Licencing = () => {
   return (
@@ -9,7 +9,7 @@ export const Licencing = () => {
 
       <div className="p-5 flex flex-col gap-5 xl:px-30 md:px-10">
         <div className="flex flex-col gap-5">
-          <div className ="xl:flex xl:flex-col xl:gap-2">
+          <div className="xl:flex xl:flex-col xl:gap-2">
             <h1 className="font-bold text-2xl md:text-3xl">Icons & Graphics</h1>
             <p className="text-gray-500 text-sm xl:text-base">
               Icons and Graphics were manually desgined by the VictorFlow team.

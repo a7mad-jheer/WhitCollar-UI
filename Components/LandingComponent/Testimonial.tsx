@@ -1,4 +1,4 @@
-import { ClientCard, HeroTitle } from "@/Components/global/page";
+import { ClientCard, HeroTitle } from "@/Components/global/GlobalWrapper";
 
 import { CiStar } from "react-icons/ci";
 
@@ -35,22 +35,21 @@ export default function Testimonial() {
         />
       </div>
 
-
-        <div className=" flex flex-col md:flex-row gap-2  px-10">
-          {items.map((item) => {
-            return (
-                <ClientCard
-                key={item.id}
-                  id={item.id}
-                  src={item.src}
-                  name={item.name}
-                  job={item.job}
-                  icon={item.icon}
-                  description={item.description}
-                />
-            );
-          })}
-        </div>
+      <div className=" flex flex-col md:flex-row gap-2  px-10">
+        {items.map((item) => {
+          return (
+            <ClientCard
+              key={item.id}
+              id={item.id}
+              src={item.src}
+              name={item.name}
+              job={item.job}
+              icon={item.icon}
+              description={item.description}
+            />
+          );
+        })}
+      </div>
     </section>
   );
 }

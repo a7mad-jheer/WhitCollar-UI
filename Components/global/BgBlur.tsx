@@ -1,7 +1,6 @@
-
 import Image from "next/image";
 import React from "react";
-import { HeroTitle } from "@/Components/global/page";
+import { HeroTitle } from "@/Components/global/GlobalWrapper";
 
 export const BgBlur = ({
   imgSrc,
@@ -28,9 +27,7 @@ export const BgBlur = ({
         <div className="flex flex-col   ">
           <div className="sm:w-130 h-100 flex flex-col items-center justify-center">
             <div
-              className={`p-5 flex flex-col items-center ${
-                className || ""
-              }`}
+              className={`p-5 flex flex-col items-center ${className || ""}`}
             >
               <HeroTitle title={textTitle} />
 

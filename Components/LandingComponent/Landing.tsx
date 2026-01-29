@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { FaPlayCircle } from "react-icons/fa";
-import { BgBlur } from "../global/page";
+import { BgBlur } from "../global/GlobalWrapper";
 
 export default function Landing() {
   return (

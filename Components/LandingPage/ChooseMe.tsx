@@ -1,9 +1,7 @@
 import Link from "next/link";
 import { FiCheck } from "react-icons/fi";
 import { FaStar } from "react-icons/fa";
-import { BgBlur , Circle} from "../global/page";
-
-
+import { BgBlur, Circle } from "../global/GlobalWrapper";
 
 export default function ChooseMe() {
   const items = [
@@ -25,11 +23,11 @@ export default function ChooseMe() {
           {items.map((item) => {
             return (
               <div key={item.id}>
-              <Circle
-                value={item.value}
-                title={item.title}
-                description={item.description}
-              />
+                <Circle
+                  value={item.value}
+                  title={item.title}
+                  description={item.description}
+                />
               </div>
             );
           })}

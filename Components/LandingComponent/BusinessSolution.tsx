@@ -3,7 +3,7 @@ import Link from "next/link";
 
 import { HiHomeModern } from "react-icons/hi2";
 import { useEffect, useRef, useState } from "react";
-import { HeroTitle } from "../global/page";
+import { HeroTitle } from "../global/GlobalWrapper";
 
 const items = [
   {
@@ -55,7 +55,7 @@ export default function BusinessSolution() {
           setStarted(true);
         }
       },
-      { threshold: 0.5 }
+      { threshold: 0.5 },
     );
 
     if (element) observer.observe(element);
@@ -74,14 +74,13 @@ export default function BusinessSolution() {
           clearInterval(interval);
           return finalValue;
         } else {
-           return Math.max(prev - 0.2, finalValue);;
+          return Math.max(prev - 0.2, finalValue);
         }
       });
     }, 50);
 
     return () => clearInterval(interval);
   }, [started]);
-
 
   return (
     <div

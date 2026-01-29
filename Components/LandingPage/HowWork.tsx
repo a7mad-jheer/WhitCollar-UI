@@ -1,7 +1,6 @@
 "use client";
 import { MdOutlineDone } from "react-icons/md";
-import {Button, HeroTitle } from "@/Components/global/page"
-
+import { Button, HeroTitle } from "@/Components/global/GlobalWrapper";
 
 const items = [
   {

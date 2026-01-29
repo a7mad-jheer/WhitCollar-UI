@@ -1,4 +1,4 @@
-import { BgBlur, LatestCard } from "@/Components/global/page";
+import { BgBlur, LatestCard } from "@/Components/global/GlobalWrapper";
 import Image from "next/image";
 import { FaAngleDoubleRight, FaCalendarAlt } from "react-icons/fa";
 

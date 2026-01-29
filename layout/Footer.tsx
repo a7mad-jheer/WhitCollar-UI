@@ -1,9 +1,14 @@
 import Link from "next/link";
-import { FaInstagram, FaFacebookF, FaTwitter, FaTelegramPlane } from "react-icons/fa";
+import {
+  FaInstagram,
+  FaFacebookF,
+  FaTwitter,
+  FaTelegramPlane,
+} from "react-icons/fa";
 import { IoCall } from "react-icons/io5";
 import { MdEmail } from "react-icons/md";
 import { FaLocationDot } from "react-icons/fa6";
-import { Button, HeroTitle } from "@/Components/global/page";
+import { Button, HeroTitle } from "@/Components/global/GlobalWrapper";
 
 export default function Footer() {
   const items = [
@@ -88,7 +93,10 @@ export default function Footer() {
 
       <div className="flex flex-col gap-5 sm:grid sm:grid-cols-6 sm:justify-items-center lg:flex lg:flex-row lg:gap-10">
         {items.map((item) => (
-          <div key={item.id} className="flex flex-col sm:col-span-2 sm:justify-items-center lg:flex-1">
+          <div
+            key={item.id}
+            className="flex flex-col sm:col-span-2 sm:justify-items-center lg:flex-1"
+          >
             <h1 className="text-start w-full">{item.title}</h1>
             <ul className="flex flex-wrap gap-4 justify-center sm:flex-col">
               {item.links.map((link) => (
@@ -133,7 +141,9 @@ export default function Footer() {
         </div>
 
         <p className="text-center">
-          Copyright @ <span className="text-red-300">WhiteCollar</span> | Designed By <span className="text-amber-700">Eng.Ahmed Jheer</span> - Powered By Webflow
+          Copyright @ <span className="text-red-300">WhiteCollar</span> |
+          Designed By <span className="text-amber-700">Eng.Ahmed Jheer</span> -
+          Powered By Webflow
         </p>
       </div>
     </section>

@@ -1,4 +1,4 @@
-import { BgBlur, Button, HeroTitle } from "@/Components/global/page";
+import { BgBlur, Button, HeroTitle } from "@/Components/global/GlobalWrapper";
 
 const items = [
   {
@@ -104,7 +104,11 @@ export const GetConsulting = () => {
           {items.map((item) => {
             return (
               <div key={item.id}>
-                {item.title === "Advanced" ? (<div className="bg-red-300 py-3 px-5 text-center font-bold text-white text-2xl">Most Popular</div>) : null}
+                {item.title === "Advanced" ? (
+                  <div className="bg-red-300 py-3 px-5 text-center font-bold text-white text-2xl">
+                    Most Popular
+                  </div>
+                ) : null}
                 <div
                   className={`${
                     item.title === "Advanced"

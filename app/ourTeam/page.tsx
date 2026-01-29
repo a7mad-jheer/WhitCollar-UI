@@ -1,4 +1,4 @@
-import { BgBlur, HeroTitle, TeamCard } from "@/Components/global/page";
+import { BgBlur, HeroTitle, TeamCard } from "@/Components/global/GlobalWrapper";
 import Image from "next/image";
 
 const items = [
@@ -65,30 +65,39 @@ export const OurTeam = () => {
       </div>
 
       <div className="p-5 xl:px-60 xl:flex">
-        <div className="bg-gray-800 text-white p-5 md:p-10 xl:w-[50%]" >
-          <HeroTitle title="Dedicated Team" titleSize="text-center" description ="Professional Individual" paragraph ={<p>Leverage aglie frameworks to provided a synopsis for high overveiws thinking overall proposition.</p>} />
+        <div className="bg-gray-800 text-white p-5 md:p-10 xl:w-[50%]">
+          <HeroTitle
+            title="Dedicated Team"
+            titleSize="text-center"
+            description="Professional Individual"
+            paragraph={
+              <p>
+                Leverage aglie frameworks to provided a synopsis for high
+                overveiws thinking overall proposition.
+              </p>
+            }
+          />
 
           <div className=" flex flex-col md:flex-row  gap-10 md:gap-20 xl:gap-5 flex-wrap items-center justify-center ">
             <div className="relative z-50 h-40 w-40 flex items-center justify-center rounded-full bg-red-200 text-gray-900 font-bold text-2xl ">
-
               Year Of 2026
             </div>
 
             <div className="flex-1 flex flex-col text-center justify-center md:items-start md:text-start gap-2 ">
               <h1 className="font-bold text-4xl">75%</h1>
-              <h4 className="text-red-300 font-semibold text-2xl ">Income Statement</h4>
-              <p className="text-gray-500">Leverage aglie frameworks to provided a synopsis for high overveiws thinking overall proposition.</p>
+              <h4 className="text-red-300 font-semibold text-2xl ">
+                Income Statement
+              </h4>
+              <p className="text-gray-500">
+                Leverage aglie frameworks to provided a synopsis for high
+                overveiws thinking overall proposition.
+              </p>
             </div>
           </div>
         </div>
 
         <div className="relative w-1/2 h-120 hidden xl:block xl:flex-1 ">
-          <Image 
-          fill
-          src ="/meeting.jpg"
-          alt=""
-          className="object-cover"
-          />
+          <Image fill src="/meeting.jpg" alt="" className="object-cover" />
         </div>
       </div>
     </section>

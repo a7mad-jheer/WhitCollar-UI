@@ -1,5 +1,5 @@
 import Image from "next/image";
-import {Button, HeroTitle } from "@/Components/global/page"
+import { Button, HeroTitle } from "@/Components/global/GlobalWrapper";
 import Testimonial from "./Testimonial";
 
 const items = [

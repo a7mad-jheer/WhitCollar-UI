@@ -3,7 +3,7 @@ import Link from "next/link";
 
 import { HiHomeModern } from "react-icons/hi2";
 import { useEffect, useRef, useState } from "react";
-import { HeroTitle } from "../global/page";
+import { HeroTitle } from "../global/GlobalWrapper";
 
 const items = [
   {
@@ -55,7 +55,7 @@ export default function BusinessSolution() {
           console.log("finded");
         }
       },
-      { threshold: 0.5 }
+      { threshold: 0.5 },
     );
 
     if (ref.current) observer.observe(ref.current);

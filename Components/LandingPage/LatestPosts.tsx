@@ -1,5 +1,5 @@
 import Image from "next/image";
-import {Button, HeroTitle } from "@/Components/global/page"
+import { Button, HeroTitle } from "@/Components/global/GlobalWrapper";
 import { FaUser } from "react-icons/fa";
 import { GiCrossMark } from "react-icons/gi";
 import Link from "next/link";

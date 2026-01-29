@@ -1,4 +1,4 @@
-import { Button , PostCard } from "@/Components/global/page";
+import { Button, PostCard } from "@/Components/global/GlobalWrapper";
 import Image from "next/image";
 import { FaUser } from "react-icons/fa6";
 import { GiCrossMark } from "react-icons/gi";
@@ -55,7 +55,9 @@ export const LifeStyle = () => {
       </div>
 
       <div className="py-5">
-        <h1 className="font-bold text-xl ">Team Identifiers , Benefits , And How To Build One That Works</h1>
+        <h1 className="font-bold text-xl ">
+          Team Identifiers , Benefits , And How To Build One That Works
+        </h1>
         <p className="text-gray-500 text-sm md:text-base">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
           accusamus id minima at ipsa nostrum quibusdam voluptates. Natus ab
