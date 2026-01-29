@@ -2,7 +2,6 @@ export * from "./BgBlur";
 export * from "./Button";
 export * from "./Circle";
 export * from "./WidthWrapper";
-export * from "./GlobalWrapper";
 export * from "./HeroTitle";
 export * from "./BgGrayCard";
 export * from "./ClientCard";
